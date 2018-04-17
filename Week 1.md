@@ -1,4 +1,4 @@
 # Tugas
 Hacktiv8
 
-(/HTML 100.PNG)
+(https://github.com/kneric/Tugas/blob/master/HTML%20100.PNG)
