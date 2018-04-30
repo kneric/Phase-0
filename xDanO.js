@@ -1,8 +1,11 @@
 function xo(str) {
-  var index = str.indexOf('x')
-  var x = str.charAt(index)
-  console.log(x)
-  
+  var x = (str.match(/x/g)).length;
+  var o = (str.match(/o/g)).length;
+  if (x === o){
+    return true
+  } else {
+    return false
+  }
 }
 
 
