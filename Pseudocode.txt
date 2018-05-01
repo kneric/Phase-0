@@ -1,0 +1,44 @@
+1. Newton Second Law
+  SET `ΣF`
+  SET `m`
+  SET `a`
+  SET `ΣF` = `m` * `a`
+  STORE `m` = 600
+  STORE `a` = 2
+  COMPUTE `ΣF`
+  SHOW result
+
+2. Tahun Kabisat
+  SET `TAHUN`
+  IF ((`TAHUN` mod 4 = 0 AND
+    `TAHUN` mod 100 > 0) OR
+    (`TAHUN` mod 4 = 0 AND 
+    `TAHUN` mod 100 = 0 AND 
+    `TAHUN` mod 400 = 0)) THEN
+    "TAHUN KABISAT"   
+  ELSE 
+    "TAHUN BIASA"
+  ENDIF
+
+3. Laundry Day
+  SET `MESIN CUCI`
+  SET `JUMLAH PAKAIAN`
+  STORE `JUMLAH PAKAIAN` with 0
+  WHILE `JUMLAH PAKAIAN` < 21
+    ADD `JUMLAH PAKAIAN` by 1
+  DISPLAY `JUMLAH PAKAIAN`
+  START `MESIN CUCI`
+
+  4. Periksa Kuku
+  SET `KUKU`
+  STORE `MURID` to 0
+  WHILE `MURID` < 41
+    ADD `MURID` by 1
+    IF `KUKU` = "PANJANG" THEN
+      "HUKUM"
+    ELSE  
+      "PUJI"
+    ENDIF
+
+
+
