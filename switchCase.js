@@ -1,6 +1,7 @@
 var hari;
 var bulan;
 var tahun;
+var tulis = console.log(hari+'')
 
 hari=21
 bulan=2
