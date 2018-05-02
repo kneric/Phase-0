@@ -1,7 +1,6 @@
 var hari;
 var bulan;
 var tahun;
-var tulis = console.log(hari+'')
 
 hari=21
 bulan=2
@@ -9,42 +8,45 @@ tahun=2121
 
 switch (bulan){
   case bulan = 1:
-  console.log(hari+' '+'Januari'+' '+tahun);
+  bulan = 'Januari';
   break;
   case bulan = 2:
-  console.log(hari+' '+'Februari'+' '+tahun);
+  bulan = 'Februari';
   break;
   case bulan = 3:
-  console.log(hari+' '+'Maret'+' '+tahun);
+  bulan = 'Maret';
   break;
   case bulan = 4:
-  console.log(hari+' '+'April'+' '+tahun);
+  bulan = 'April';
   break;
   case bulan = 5:
-  console.log(hari+' '+'Mei'+' '+tahun);
+  bulan = 'Mei';
   break;
   case bulan = 6:
-  console.log(hari+' '+'Juni'+' '+tahun);
+  bulan = 'Juni';
   break;
   case bulan = 7:
-  console.log(hari+' '+'Juli'+' '+tahun);
+  bulan = 'Juli';
   break;
   case bulan = 8:
-  console.log(hari+' '+'Agustus'+' '+tahun);
+  bulan = 'Agustus';
   break;
   case bulan = 9:
-  console.log(hari+' '+'September'+' '+tahun);
+  bulan = 'September';
   break;
   case bulan = 10:
-  console.log(hari+' '+'Oktober'+' '+tahun);
+  bulan = 'Oktober';
   break;
   case bulan = 11:
-  console.log(hari+' '+'November'+' '+tahun);
+  bulan = 'November';
   break;
   case bulan = 12:
-  console.log(hari+' '+'Desember'+' '+tahun);
+  bulan = 'Desember';
   break;
   default:
   console.log('Masukkan data');
   break;
 }
+
+
+console.log(hari + ' ' + bulan + ' ' + tahun);
