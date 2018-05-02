@@ -1,12 +1,11 @@
 // mengakses nilai dalam array
 
 function balikString(kata) {
-  var panjang = kata.length;
-  var x;
-
-
-  for (x = 0; x <= panjang; x++)
-    console.log(kata[panjang - x])
+  var hasil = " ";
+  for (x = kata.length; x >= 0; x--){
+    hasil += kata.charAt(x);
+  }
+return hasil;
 }
 
-balikString('Hello')
+console.log(balikString('Hello'))

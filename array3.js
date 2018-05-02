@@ -45,7 +45,7 @@ function dataHandling2(input){
       break;
   };
   console.log(bulan);
-  console.log(pisah.sort(function (a,b) {return a<b}));
+  console.log(pisah.sort(function (a,b) {return Number(a)<Number(b)}));
   console.log(join);
   console.log(input[1].slice(0, 15))
 }
