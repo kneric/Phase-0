@@ -1,11 +1,10 @@
 function balikKata(kata) {
-  panjang = kata.length
-  x = 0
-  
-  for (x = 0; x <= panjang; x++)
-  console.log(kata[panjang - x])
+  var hasil = '';  
+  for (x = kata.length-1; x >= 0; x--){
+    hasil += kata.charAt(x);
+  }
+  return hasil;
 }
-
 
 console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
 console.log(balikKata('John Doe')); // eoD nhoJ
