@@ -1,11 +1,13 @@
 function konversiMenit(menit) {
-  jam = Math.floor(menit / 60)
-  sisa = menit % 60
-  x = String(sisa)
+  var y = Math.floor(menit / 60)
+  var jam = String(y)
+  var sisa = menit % 60
+  var x = String(sisa)
+
   if (x.length < 2) {
-    console.log(jam + ':' + '0' + sisa)
-  } else {
-    console.log(jam + ':' + sisa)
+    return (String(jam + ':' + '0' + sisa))
+  } else { 
+    return (String(jam + ':' + sisa))
   }
 }
 
