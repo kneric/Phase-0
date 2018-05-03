@@ -4,6 +4,7 @@ function dataHandling2(input){
   input.splice(1, 4, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung', '21/05/1989', 'Pria', 'SMA Internasional Metro');
   console.log(input);
   var pisah = input[3].split('/');
+  var number = Number(pisah[1],pisah[2],pisah[3])
   var bulan = Number(pisah[1]);
   var join = pisah.join('-');
   switch (bulan) {
@@ -45,7 +46,7 @@ function dataHandling2(input){
       break;
   };
   console.log(bulan);
-  console.log(pisah.sort(function (a,b) {return a<b}));
+  console.log(number.sort(function (a,b) {return a<b}));
   console.log(join);
   console.log(input[1].slice(0, 15))
 }
