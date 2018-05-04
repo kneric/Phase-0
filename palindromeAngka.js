@@ -1,18 +1,16 @@
 function angkaPalindrome(num) {
   var hasil = '';
-  //var num2 = num + 1;
-  var nomor = String(num);
-  while (hasil != num){
+  var num2 = num + 1;
+  var nomor = String(num2);
+  while (hasil != num2){
     for (var x = nomor.length-1; x >= 0; x--){
       hasil += nomor[x]
     }
-    if (hasil != num){
-      num+1
+    if (hasil != num2){
+      return num2+1
     }
-    
+    return hasil
   }
-  return(hasil)
-
 }
 // TEST CASES
 console.log(angkaPalindrome(70)); // 181
