@@ -1,7 +1,12 @@
 function palindrome(kata) {
-  var panjang = kata.length
-  for (var x = panjang - 1; x >= 0; x++) {
-    (kata[x])
+  var hasil = '';
+  for (var x = kata.length - 1; x >= 0; x--){
+    hasil += kata[x];
+  }
+  if (hasil === kata){
+    return true
+  } else {
+    return false
   }
 }
 

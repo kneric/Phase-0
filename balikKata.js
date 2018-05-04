@@ -1,7 +1,7 @@
 function balikKata(kata) {
   var hasil = '';  
   for (x = kata.length-1; x >= 0; x--){
-    hasil += kata.charAt(x);
+    hasil += kata[x];
   }
   return hasil;
 }
