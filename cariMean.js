@@ -3,8 +3,8 @@ function cariMean(arr) {
   var x;
   for (x = arr.length - 1; x >= 0; x--){
     hasil = (hasil + arr[x])
-  }
-  return Math.round(hasil/arr.length) 
+  };
+  return Math.round(hasil/arr.length);
   
 }
 

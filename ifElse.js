@@ -1,7 +1,7 @@
 var nama = '';
 var peran = '';
-nama = 'Brian'
-peran = 'Penyihir'
+nama = 'Brian';
+peran = 'Penyihir';
 
 if (nama !='' && peran == ''){
   console.log('Halo '+nama+', Pilih peranmu untuk memulai game!');

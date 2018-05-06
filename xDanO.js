@@ -2,9 +2,9 @@ function xo(str) {
   var x = (str.match(/x/g)).length;
   var o = (str.match(/o/g)).length;
   if (x === o){
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 

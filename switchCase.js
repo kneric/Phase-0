@@ -2,9 +2,9 @@ var hari;
 var bulan;
 var tahun;
 
-hari=21
-bulan=2
-tahun=2121
+hari=21;
+bulan=2;
+tahun=2121;
 
 switch (bulan){
   case bulan = 1:

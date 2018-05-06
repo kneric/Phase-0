@@ -1,5 +1,14 @@
 function pasanganTerbesar(num) {
-  // you can only write your code here!
+  var numStr = String(num);
+  var numArr = numStr.split('');
+  var urut = numStr.split('');
+  urut.sort(function (a, b) {
+    return a < b
+  });
+  var angkaTerbesarArr = urut.slice(0, 1);
+  var posisi = numStr.indexOf(angkaTerbesarArr);
+  var angkaSebelahnya = numArr.slice(posisi + 1, posisi + 2);
+  return Number(angkaTerbesarArr + angkaSebelahnya);
 }
 
 // TEST CASES

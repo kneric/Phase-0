@@ -8,4 +8,4 @@ function balikString(kata) {
 return hasil;
 }
 
-console.log(balikString('Hello'))
+console.log(balikString('Hello'));

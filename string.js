@@ -8,7 +8,7 @@ var fifth = 'I';
 var sixth = 'love';
 var seventh = 'it!';
 
-console.log(word+' '+second+' '+third+' '+fourth+' '+fifth+' '+sixth+' '+seventh)
+console.log(word+' '+second+' '+third+' '+fourth+' '+fifth+' '+sixth+' '+seventh);
 
 // index accessing -1 by 1
 
