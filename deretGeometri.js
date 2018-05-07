@@ -6,10 +6,10 @@ function tentukanDeretGeometri(arr) {
   var r = arr[1] / arr[0];
   var r2 = Math.pow(r, arr.length);
   if (total * (1 - r) === arr[0] * (1 - r2)) {
-    return (true)
+    return (true);
   } else {
-    return (false)
-  };
+    return (false);
+  }
 }
 
 // TEST CASES

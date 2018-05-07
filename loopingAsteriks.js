@@ -7,7 +7,7 @@ var text1 = '';
 rows1 = 3;
 
 for (var x1 = rows1; x1 >= 1; x1--) {
-  text1 = ('*');
+  text1 = '*';
   console.log(text1);
 }
 
@@ -32,7 +32,7 @@ rows3 = 3;
 for (x3 = rows3; x3 >= 1; x3--) {
   var text3 = '';
   for (y3 = x3; y3 <= rows3; y3++) {
-    text3 = text3 + ('*');
+    text3 += '*';
   }
   console.log(text3);
 }

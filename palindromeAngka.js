@@ -1,16 +1,37 @@
+
 function angkaPalindrome(num) {
-  var hasil = '';
-  var num2 = num + 1;
-  var nomor = String(num2);
-  while (hasil != num2){
-    for (var x = nomor.length-1; x >= 0; x--){
-      hasil += nomor[x]
+  function cekPalindrome(num){
+    var balik = '';
+    var numStr = String(num);
+    for (var i = numStr.length - 1; i >= 0; i--) {
+      balik += numStr[i];
     }
-    if (hasil != num2){
-      return num2+1
+    return Number(balik) === num;
+  } 
+  var hasil = 0;
+  for (var j = num +1; j < num * 2; j++){
+    hasil = j;
+    if (cekPalindrome(j)) {
+      break;
     }
-    return hasil
   }
+  return hasil;
 }
+
+
+
+
 // TEST CASES
-console.log(angkaPalindrome(70)); // 181
+console.log(angkaPalindrome(172)); // 181
+
+// OTHER LOOP
+// function angkaPalindrome(num) {
+//   function cekPalindrome(num) {
+//     var a, no, temp = 0;
+//     no = num;
+
+//     while (no > 0) {
+//       a = no % 10;
+//       no = parseInt(no / 10);
+//       temp = temp * 10 + a;
+//     }
