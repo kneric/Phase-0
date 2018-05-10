@@ -1,5 +1,14 @@
-// melooping menggunakan array
 // buat flowchartnya dulu, biar ga bingung
+
+// melooping menggunakan array
+/*
+Tugas kamu adalah mengimplementasikan fungsi dataHandling agar dapat menampilkan data-data pada dari argumen seperti di bawah ini:
+
+Nomor ID:  0001
+Nama Lengkap:  Roman Alamsyah
+TTL:  Bandar Lampung 21/05/1989
+Hobi:  Membaca
+*/
 
 var input = [
   ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],

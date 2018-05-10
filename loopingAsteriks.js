@@ -1,6 +1,16 @@
 // biar ga bingung, bikin flowchartnya polanya dulu cuy!
 
 // menyusun barisan bintang
+/*
+jika rows1 = 5
+
+*
+*
+*
+*
+*
+
+*/
 
 var rows1; // input the number of rows
 var text1 = '';
@@ -13,6 +23,17 @@ for (var x1 = rows1; x1 >= 1; x1--) {
 
 
 // menyusun barisan bintang dengan nested looping
+/*
+
+jika rows2 = 5
+
+*****
+*****
+*****
+*****
+*****
+
+*/
 
 var rows2; // input the number of rows
 rows2 = 3
@@ -25,6 +46,18 @@ for (var x2 = rows2; x2 >= 1; x2--) {
 }
 
 // menyusun barisan tangga bintang dengan nested looping
+
+/*
+
+jika rows3 = 5
+
+*
+**
+***
+****
+*****
+
+*/
 
 var rows3; // input the number of rows
 rows3 = 3;

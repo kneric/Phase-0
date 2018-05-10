@@ -1,3 +1,16 @@
+/*
+Directions
+Kamu akan diberikan sebuah tanggal dalam tiga variabel, yaitu hari, bulan, dan tahun. Disini kamu diminta untuk membuat format tanggal. Misal tanggal yang diberikan adalah hari 1, bulan 5, dan tahun 1945. Maka, output yang harus kamu proses adalah menjadi 1 Mei 1945.
+
+Gunakan switch case untuk kasus ini!
+
+Contoh:
+
+var hari = 21; var bulan = 1; var tahun = 1945;
+
+Maka hasil yang akan tampil di console adalah: '21 Januari 1945';
+*/
+
 var hari;
 var bulan;
 var tahun;
@@ -7,40 +20,40 @@ bulan=2;
 tahun=2121;
 
 switch (bulan){
-  case bulan = 1:
+  case 1:
   bulan = 'Januari';
   break;
-  case bulan = 2:
+  case 2:
   bulan = 'Februari';
   break;
-  case bulan = 3:
+  case 3:
   bulan = 'Maret';
   break;
-  case bulan = 4:
+  case 4:
   bulan = 'April';
   break;
-  case bulan = 5:
+  case 5:
   bulan = 'Mei';
   break;
-  case bulan = 6:
+  case 6:
   bulan = 'Juni';
   break;
-  case bulan = 7:
+  case 7:
   bulan = 'Juli';
   break;
-  case bulan = 8:
+  case 8:
   bulan = 'Agustus';
   break;
-  case bulan = 9:
+  case 9:
   bulan = 'September';
   break;
-  case bulan = 10:
+  case 10:
   bulan = 'Oktober';
   break;
-  case bulan = 11:
+  case 11:
   bulan = 'November';
   break;
-  case bulan = 12:
+  case 12:
   bulan = 'Desember';
   break;
   default:
