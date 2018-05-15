@@ -4,41 +4,27 @@ Diberikan sebuah function checkAB(str) yang menerima satu parameter berupa strin
 */
 
 function checkAB(str) {
-  var strNoSpace = ''
-  var posisiA = [];
-  var posisiB = [];
-  var jarak = 0;
-  var temp = [];
+  var strArr = [];
+  var ketemu = false;
   for (var i = 0; i < str.length; i++){
-    if (str[i] !== ' '){
-      strNoSpace += str[i];
+      strArr.push (str[i]);
+    }
+  for (var j = 0; j < strArr.length; j++){
+    if (strArr[j] === 'a' && strArr[j+4] === 'b'){
+      ketemu = true;
+    } else if (strArr[j] === 'b' && strArr[j+4] === 'a'){
+      ketemu = true;
+      
     }
   }
-  for (var j = 0; j < strNoSpace.length; j++){
-    if (str[j] === 'a'){
-      posisiA.push(strNoSpace.indexOf('a'));
-    } else if (str[j] === 'b'){
-      posisiB.push(strNoSpace.indexOf('b'));
-    }
-  }
-  for (var k = 0; k < posisiA.length; k++){
-    for (var l = 0; l < posisiB.length; l++){
-      jarak = Math.abs(posisiA[k]-posisiB[l]);
-      temp.push(jarak);
-    }
-  }
-  for (var m =0; m < temp.length; m++){
-    if (temp[m] === 3){
-      return true;
-    } else {
-      return false;
-    }
-  }
+  return ketemu
 }
 
+
+
 // TEST CASES
-// console.log(checkAB('lane borrowed')); // true
-// console.log(checkAB('i am sick')); // false
-// console.log(checkAB('you are boring')); // true
+console.log(checkAB('lane borrowed')); // true
+console.log(checkAB('i am sick')); // false
+console.log(checkAB('you are boring')); // true
 console.log(checkAB('barbarian')); // true
-// console.log(checkAB('bacon and meat')); // false
+console.log(checkAB('bacon and meat')); // false
