@@ -11,8 +11,18 @@ Output yang diharapkan berupa Object Literal dengan format sebagai berikut:
 */
 
 function highestScore (students) {
-  // Code disini
+  var sekolah = {};
+  for(var i in students){
+    var kelas = students[i].class;
+    if (sekolah[kelas] === undefined || students[i].score > sekolah[kelas].score) {//buat objek kelas baru OR nimpa highest score di kelas yg sudah dibuat sebelumnya
+      sekolah[kelas] = {};
+      sekolah[kelas].name = students[i].name;
+      sekolah[kelas].score = students[i].score;
+    }
+  }
+  return sekolah;
 }
+
 
 // TEST CASE
 console.log(highestScore([
