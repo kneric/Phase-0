@@ -10,33 +10,20 @@ Urutan hewan dalam array setiap pengelompokan huruf tidak penting.
 */
 
 function groupAnimals(animals) {
-  animals.sort(function (a, b) {
-    return a > b;
-  })
-  var hurufA = [];
-  var hurufC = [];
-  var hurufK = [];
-  var hurufU = [];
-  var hasil = [];
-  var a;
-  var c;
-  var k;
-  var u;
+  animals.sort()
+  var kelompok = [];
+  var result = [];
 
-  for (var i = 0; i < animals.length; i++) {
-    if (animals[i][0].indexOf('a') == 0) {
-      hurufA.push(animals[i]);
-    } else if (animals[i][0].indexOf('c') == 0) {
-      hurufC.push(animals[i]);
-    } else if (animals[i][0].indexOf('k') == 0) {
-      hurufK.push(animals[i]);
-    } else if (animals[i][0].indexOf('u') == 0) {
-      hurufU.push(animals[i]);
+  for (var i = 0; i < animals.length; i++){
+    kelompok.push(animals[i]);
+    if (i === animals.length - 1){//loop berakhir, karena posisi udah di value terakhir
+      result.push(kelompok);
+    } else if (animals[i].charAt(0) !== animals[i+1].charAt(0)){ //dipush, krn value sebelahnya udah beda
+      result.push(kelompok);
+      kelompok = []; //ngosongin array setelah push dilakukan
     }
   }
-
-  hasil = [hurufA, hurufC, hurufK, hurufU];
-  return hasil;
+  return result;
 }
 
 // TEST CASES
