@@ -23,17 +23,16 @@ function graduates(students) {
   var graduates = {};
   for(var i in students){
     var kelas = students[i].class;
-    graduates[kelas] = [];
     if (graduates[kelas] === undefined && students[i].score > 75){ // buat objek baru & mastiin student yg gagal ga masuk
       var student = {};
       student.name = students[i].name;
       student.score = students[i].score;
-      graduates[kelas].push(student);
-    } else if (students[i].score > 75){//buat masukin student lulus jika kelas udah dibikin sebelumnya
-      var student = {};
-      student.name = students[i].name;
-      student.score = students[i].score;
-      (graduates[kelas]).push(student);
+      graduates[kelas] = [student];
+    } else if (students[i].score > 75){//buat masukin student lain yg lulus jika kelasnya udah dibikin sebelumnya
+      var anotherStudent = {};
+      anotherStudent.name = students[i].name;
+      anotherStudent.score = students[i].score;
+      graduates[kelas].push(anotherStudent);
     }
   }
   return graduates;
